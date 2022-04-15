@@ -16,7 +16,7 @@ To add content to this repository, use any markdown editor of choice, but the re
 
 ## Non-Webstore Releases
 
-You'll find the latest Saifu releases in this repository. Head over to [Releases](https://github.com/saifuwallet/saifu/releases)
+You'll find the latest Saifu releases in this repository. Head over to [Releases](https://github.com/saifuwallet/saifu/releases). Refer to [How to install the non-webstore versions of Saifu](/How%20to%20install%20the%20non-webstore%20versions%20of%20Saifu.md)
 
 - `nightly-x-x`: Automatic daily releases off the latest development tip
 - `1.1.0`: Stable release
