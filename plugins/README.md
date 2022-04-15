@@ -25,7 +25,7 @@ Plugins are loaded into Saifu using the [SystemJS](https://github.com/systemjs/s
 - Integrate middlewares with components such as address book to provide rich data (coming soon)
 
 ## How plugins are built 
-Plugins can be build with any builder, as long as it generates valid SystemJS packages (`System.register(...)`. We are using [rollup.js](https://rollupjs.org/guide/en/)
+Plugins can be build with any bundler, as long as it generates valid SystemJS packages (`System.register(...)`. We are using [rollup.js](https://rollupjs.org/guide/en/)
 
 **Important:** Treat the following dependencies as external, meaning you want SystemJS to provide those for you during runtime. In rollup you can do this by adding them to the `externals` configuration field. **Don't include them in your build**! 
 
