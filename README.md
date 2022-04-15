@@ -25,7 +25,7 @@ You'll find the latest Saifu releases in this repository. Head over to [Releases
 
 Nightly releases are created automatically by the CI and can be highly unstable. Use at own risk and be ready to re-import your seedphrase if things stop working
 
-Report issues you find over at https://github.com/saifuwallet/saifu-issues
+Report issues you find over at https://github.com/saifuwallet/saifu
 
 ## How to find information here
 
