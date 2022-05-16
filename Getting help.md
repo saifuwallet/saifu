@@ -4,7 +4,8 @@ If you notice something isn't working as intended or you need assistance with us
 
 ## Through GitHub
 
-The easiest way to report an issue is right here through GitHub. Use the following link to navigate to the 'New Issue' screen and explain the issue you're experiencing. 
+The easiest way to report an issue is right here through GitHub. Use the following link to navigate to the 'New Issue' screen and explain the issue you're experiencing: https://github.com/saifuwallet/saifu/issues/new
+
 Please provide:
 
 - Browser 
