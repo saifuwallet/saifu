@@ -13,6 +13,7 @@ To add content to this repository, use any markdown editor of choice, but the re
 
 - Firefox: https://addons.mozilla.org/en-US/firefox/addon/saifu-crypto-wallet/
 - Chrome: https://chrome.google.com/webstore/detail/saifu-crypto-wallet/ejdabmcenoflojakpkgjnilnohjoobac
+- Safari: https://apps.apple.com/app/saifu-wallet-for-safari/id1621044327
 
 ## Non-Webstore Releases
 
