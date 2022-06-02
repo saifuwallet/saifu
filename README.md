@@ -15,6 +15,10 @@ To add content to this repository, use any markdown editor of choice, but the re
 - Chrome: https://chrome.google.com/webstore/detail/saifu-crypto-wallet/ejdabmcenoflojakpkgjnilnohjoobac
 - Safari: https://apps.apple.com/app/saifu-wallet-for-safari/id1621044327
 
+## Public TestFlight (macOS)
+
+If you feel adventurous and don't mind using versions that are still in testing, you can also sign up for our public TestFlight with this link: https://testflight.apple.com/join/rnJ4TR0f
+
 ## Non-Webstore Releases
 
 You'll find the latest Saifu releases in this repository. Head over to [Releases](https://github.com/saifuwallet/saifu/releases). Refer to [How to install the non-webstore versions of Saifu](/How%20to%20install%20the%20non-webstore%20versions%20of%20Saifu.md)
