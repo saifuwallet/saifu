@@ -6,13 +6,13 @@
 ## Preparing Saifu
 1. Download the latest non-webstore [chrome release](https://github.com/saifuwallet/saifu-releases/releases)
 2. Navigate to your browsers extension settings and enable 'Developer mode' in the top right corner
-![](../docs/Building%20Plugins/attachments/brave-top.png)
+![](attachments/brave-top.png)
 3. Click 'Load unpacked' 
 4. Navigate to the unpacked folder containing the Saifu dev version
 
 If all worked fine, Saifu should load successfully
 
-![](../static/attachments/unbundled-plugin-success.png)
+![](attachments/unbundled-plugin-success.png)
 
 ## Loading plugins for development
 
@@ -20,11 +20,11 @@ Inside the saifu folder, navigate to the folder `plugins`, or create it if it do
 
 Create a new sub-folder with your plugin name and copy the contents of your built plugin bundle (metadata.json + main.js)
 
-![](../static/attachments/plugin-structure.png)
+![](attachments/plugin-structure.png)
 
 On next open, Saifu will attempt to load your custom bundle. Navigate to the plugin settings and enable it
 
-![](../static/attachments/unbundled-plugin-toggle.png)
+![](attachments/unbundled-plugin-toggle.png)
 
 **Note:** Saifu will auto-reload plugins on change, no need to manually refresh the tab
 

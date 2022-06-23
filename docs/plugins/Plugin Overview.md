@@ -1,7 +1,12 @@
-# README
 ---
-- [How to write plugins for Saifu](/plugins/How%20to%20write%20plugins%20for%20Saifu.md)
-- [How to load external plugins for development](/plugins/How%20to%20load%20external%20plugins%20for%20development.md)
+sidebar_position: 1
+---
+
+# Plugin Overview
+
+---
+- [How to write plugins for Saifu](How%20to%20write%20plugins%20for%20Saifu.md)
+- [How to load external plugins for development](How%20to%20load%20external%20plugins%20for%20development.md)
 ---
 
 Plugins are loaded into Saifu using the [SystemJS](https://github.com/systemjs/systemjs) dynamic ES loader and built using [saifu-api](https://github.com/saifuwallet/saifu-api)
@@ -24,7 +29,7 @@ Plugins are loaded into Saifu using the [SystemJS](https://github.com/systemjs/s
 - Provide additional data such as token balances and annotations to the wallet (coming soon)
 - Integrate middlewares with components such as address book to provide rich data (coming soon)
 
-## How plugins are built 
+## How plugins are built
 Plugins can be build with any bundler, as long as it generates valid SystemJS packages (`System.register(...)`. We are using [rollup.js](https://rollupjs.org/guide/en/)
 
 **Important:** Treat the following dependencies as external, meaning you want SystemJS to provide those for you during runtime. In rollup you can do this by adding them to the `externals` configuration field. **Don't include them in your build**! 
@@ -38,14 +43,14 @@ Plugins can be build with any bundler, as long as it generates valid SystemJS pa
 
 The plugin API can be found in the saifu-api repository: https://github.com/saifuwallet/saifu-api
 
-###  Plugin class 
+### Plugin class
 Plugins are implemented using normal JavaScript classes, extending the abstract `Plugin` class ([here](https://github.com/saifuwallet/saifu-api/blob/master/saifu.d.ts#L165=)) and implementing notably `onload`
 
 During onload, Plugins can register event hooks, middlewares and views with the wallet to provide integrations. Logic for setting everything up, fetching initial data and loading plugin state should happen here
 
-### Views 
+### Views
 Views are these small app icons you see on the dashboard of Saifu:
-![Plugins](../static/attachments/plugins%201.png)
+![Plugins](attachments/plugins.png)
 
 They are registered during `onload()` using `this.addView(View)`: 
 ```ts
@@ -59,7 +64,7 @@ They are registered during `onload()` using `this.addView(View)`:
 
 Views are implemented in as standard React functional components and support everything that React components can do
 
-####  View hooks
+#### View hooks
 The [saifu-api](https://github.com/saifuwallet/saifu-api) provides a handful of custom hooks to subscribe and integrate wallet data such as tokens, publicKey or price information into your plugin. As this list is constantly changing and gets expanded with new hooks, make sure to check the code available at https://github.com/saifuwallet/saifu-api/blob/master/saifu.d.ts#L10=
 
 React hooks provide deep integration into Saifu and benefit from automatic component re-renders when the hook changes. For more information on hooks, please read [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html).
@@ -75,7 +80,7 @@ Plugins are able to persists simple data into plugin storage using `loadData()` 
 In relation to plugin storage, plugins are also able to provide a settings screen users can use to directly change parameters of your plugin. 
 
 If your plugin defines a settings object, it will show up automatically in the form of a gear icon at the top of the screen
-![Settings icon](../static/attachments/settings-icon%201.png)
+![Settings icon](attachments/settings-icon.png)
 
 To add settings, use `setSettings()` during `onload()`, pointing to a subclass of abstract `PluginSettings` ([here](https://github.com/saifuwallet/saifu-api/blob/master/saifu.d.ts#L136=))
 

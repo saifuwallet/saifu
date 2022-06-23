@@ -1,4 +1,4 @@
-# Getting help
+# Getting Help
 
 If you notice something isn't working as intended or you need assistance with using Saifu, please don't hesitate to contact us. 
 
